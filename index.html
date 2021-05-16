@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word-Typing-Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h2>Fasten your typing speed playing a game</h2>
+    </div>
+    <div class="middle">
+      <br />
+      <div class="btn"><button onclick="init()">Start playing</button></div>
+      <h3 id="title">
+        Complete typing the word in <span id="num">5</span> Seconds
+      </h3>
+
+      <div class="word">Type: "<span id="currword"></span>"</div>
+      <div class="word_input">
+        <input type="text" placeholder="Type here..." id="word_input" />
+      </div>
+      <h5 id="msg"></h5>
+      <h4 id="timeleft">Time left: <span id="time-left">0</span></h4>
+      <h4 id="score">Score: <span id="scored"></span></h4>
+      <h4 id="highscore">
+        High Score:
+        <span id="high-score"></span>
+      </h4>
+    </div>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <p>✔Type each word in the given amount of seconds to score.</p>
+      <p>✔To play again, just type the current word. Your score will reset</p>
+    </div>
+
+    <div class="footer">&copy;Roshankandel</div>
+
+    <!-- js external file linking -->
+    <script src="main.js"></script>
+  </body>
+</html>
